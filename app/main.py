@@ -4,6 +4,17 @@ import matplotlib.pyplot as plt
 import pandas as pd
 from utils import load_data, get_combined_dataframe
 
+
+try:
+    st.set_page_config(page_title="Solar Dashboard", layout="wide")
+    # Your actual app logic here
+    st.title("Solar Dashboard")
+    # e.g., load data, create plots, etc.
+
+except Exception as e:
+    st.error(f"An error occurred: {e}")
+    st.exception(e)
+
 # Load and prepare data
 data_dict = load_data()
 df = get_combined_dataframe(data_dict)
