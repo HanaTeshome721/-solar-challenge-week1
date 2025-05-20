@@ -6,9 +6,9 @@ from utils import load_data, get_combined_dataframe
 
 
 try:
-    st.set_page_config(page_title="Solar Dashboard", layout="wide")
+    st.set_page_config(page_title="", layout="wide")
     # Your actual app logic here
-    st.title("Solar Dashboard")
+  
     # e.g., load data, create plots, etc.
 
 except Exception as e:
